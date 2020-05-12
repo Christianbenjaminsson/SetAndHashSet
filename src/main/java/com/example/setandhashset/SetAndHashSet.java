@@ -94,5 +94,12 @@ public class SetAndHashSet {
         for(HeavenlyBody moon : moons) {
             System.out.println("\t" + moon.getName());
         }
+
+        HeavenlyBody pluto = new HeavenlyBody("Pluto", 842);
+        planets.add(pluto);
+
+        for (HeavenlyBody planet : planets) {
+            System.out.println(planet.getName() + ": " + planet.getOrbitalPeriod());
+        }
     }
 }
